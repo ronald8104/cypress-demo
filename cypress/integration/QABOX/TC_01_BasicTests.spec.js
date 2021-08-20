@@ -10,8 +10,8 @@ describe('Login Suite', function () {
     cy.get('input[type="password"]').type('user2010');
     cy.get('button[type="submit"]').click();
     //Assert
-    //cy.contains('No articles are here... yet.').should('be.visible');
     cy.contains('Loading...').should('be.visible');
+    cy.contains('No articles are here... yet.').should('be.visible');
   });
 
   it('Second Test', () => {
